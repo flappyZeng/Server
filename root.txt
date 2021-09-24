@@ -1,0 +1,137 @@
+2021:06:22 20:06:12	name: logsdescription: logs configstypename : St3setIN6server9LogDefineESt4lessIS1_ESaIS1_EEvalue: - name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%T%m%n"
+    - type: StdoutLogAppender
+2021:06:22 20:07:34	name: logs 
+description: logs configs 
+typename : St3setIN6server9LogDefineESt4lessIS1_ESaIS1_EE 
+value:
+ - name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%T%m%n"
+    - type: StdoutLogAppender
+2021:06:22 20:08:32	name: logs 
+description: logs configs 
+typename : St3setIN6server9LogDefineESt4lessIS1_ESaIS1_EE 
+value:
+ - name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%T%m%n"
+    - type: StdoutLogAppender
+2021:06:22 20:08:32	name: system.list 
+description: system list 
+typename : NSt7__cxx114listIiSaIiEEE 
+value:
+ - 1
+- 2
+2021:06:22 20:08:32	name: system.map 
+description: system map 
+typename : St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4lessIS5_ESaISt4pairIKS5_iEEE 
+value:
+ a: 1
+b: 2
+2021:06:22 20:08:32	name: system.port 
+description: systemport 
+typename : i 
+value:
+ 8080
+2021:06:22 20:08:32	name: system.set 
+description: system set 
+typename : St3setIiSt4lessIiESaIiEE 
+value:
+ - 1
+- 2
+2021:06:22 20:08:32	name: system.unset 
+description: system unordered_set 
+typename : St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE 
+value:
+ - 2
+- 1
+2021:06:22 20:08:32	name: system.value 
+description: systemvalue 
+typename : f 
+value:
+ 8080.10986
+2021:06:22 20:08:32	name: system.vec 
+description: system vec 
+typename : St6vectorIiSaIiEE 
+value:
+ - 1
+- 2
+2021:06:22 20:08:32	name: system.vvec 
+description: system vvec 
+typename : St6vectorIS_IiSaIiEESaIS1_EE 
+value:
+ - "- 1\n- 2"
+- "- 3\n- 4"
+2021:06:22 20:08:53	name: logs 
+description: logs configs 
+typename : St3setIN6server9LogDefineESt4lessIS1_ESaIS1_EE 
+value:
+ - name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%T%m%n"
+    - type: StdoutLogAppender
+2021:06:22 20:09:26	name: logs 
+description: logs configs 
+typename : St3setIN6server9LogDefineESt4lessIS1_ESaIS1_EE 
+value:
+ - name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%T%m%n"
+    - type: StdoutLogAppender

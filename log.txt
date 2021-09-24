@@ -1,0 +1,2 @@
+2021:06:09 19:50:41	19750	0	[FATAL]	[root]	/home/adminz/桌面/project/HighPerformanceServer/server/tests/mytest.cpp:21	test log fatal
+2021:06:09 19:50:41	19750	0	[FATAL]	[root]	/home/adminz/桌面/project/HighPerformanceServer/server/tests/mytest.cpp:23	test fmt error fatal on the fmt 100 ss 

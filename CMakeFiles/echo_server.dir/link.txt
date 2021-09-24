@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/echo_server.dir/example/echo_server.cpp.o  -o server/bin/echo_server  -L./server/lib -Wl,-rpath,./server/lib:/home/adminz/桌面/project/HighPerformanceServer/server/lib server/lib/libserver.so /usr/local/lib/libyaml-cpp.a -lpthread -ldl 

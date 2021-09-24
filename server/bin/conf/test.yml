@@ -1,0 +1,32 @@
+logs:
+  - name: root
+    level: INFO
+    formatter: "%d%T%m%n"
+    appender:
+      - type: FileLogAppender
+        file: "log.txt"
+      - type: StdoutLogAppender
+  - name: system
+    level: debug
+    formatter: "%d%T%m%n"
+    appender:
+      - type: FileLogAppender
+        file: "log.txt"
+      - type: StdoutLogAppender
+
+# 下面输入列表是只能输入[, ]， 不能输入{, }
+system:
+    int: 100
+    port: 9999
+    value: 133
+    vec: [100,300]
+    vvec: 
+      - [100, 200]
+      - [300, 400]
+    list: [100, 200, 4000]
+    set: [120, 130, 140, 140]
+    unset: [101,200,303]
+    map: 
+      a: 100
+      b: 200
+      c: 300
