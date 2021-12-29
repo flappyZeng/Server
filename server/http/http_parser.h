@@ -41,10 +41,14 @@ public:
 
     int isFinished() ;
     int hasError() ;
-    size_t execute(char* data, size_t len);
+    size_t execute(char* data, size_t len, bool chunked);
 
     HttpResponse::ptr getDate() const {return m_response;}
     void setError(int v) {m_error = v;}
+
+    const httpclient_parser& getParser() const{
+        return  m_parser;
+    }
     
     uint64_t getContentLength();
 public:

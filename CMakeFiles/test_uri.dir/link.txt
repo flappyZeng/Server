@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/test_uri.dir/tests/test_uri.cpp.o  -o server/bin/test_uri  -L/server/lib -Wl,-rpath,/server/lib:/home/adminz/桌面/project/HighPerformanceServer/server/lib server/lib/libserver.so /usr/local/lib/libyaml-cpp.a -lpthread -ldl 

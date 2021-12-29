@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/hook.cpp.o"
   "CMakeFiles/server.dir/http/http.cpp.o"
   "CMakeFiles/server.dir/http/httpclient_parser_rl.cpp.o"
+  "CMakeFiles/server.dir/uri_rl.cpp.o"
   "CMakeFiles/server.dir/http/http11_parser_rl.cpp.o"
   "CMakeFiles/server.dir/http/http_parser.cpp.o"
   "CMakeFiles/server.dir/http/http_server.cpp.o"

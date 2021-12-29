@@ -6,7 +6,7 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/adminz/桌面/project/HighPerformanceServer/server/. -I/home/adminz/桌面/project/HighPerformanceServer/server/./server/include 
+CXX_INCLUDES = -I/home/adminz/桌面/project/HighPerformanceServer/server/. -I/server/include 
 
 # Custom defines: CMakeFiles/test_tcpserver.dir/tests/test_tcpserver.cpp.o_DEFINES = __FILE__="tests/test_tcpserver.cpp"
 

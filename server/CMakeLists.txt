@@ -12,11 +12,11 @@ set(CMAKE_CXX_fLAGS "$ENV{CXXFLAGS} -rdynamic -03 -g -std=c++11 -Wall -Wno-depre
 
 
 include_directories(.)
-include_directories(./server/include)
-link_directories(./server/lib)
+include_directories(/server/include)
+link_directories(/server/lib)
 
 find_library(YAMLCPP yaml-cpp)
-
+find_package(ragel)
 
 # 把编写的源码映射到lib_src上
 set(LIB_SRC
@@ -28,6 +28,7 @@ set(LIB_SRC
     server/hook.cpp
     server/http/http.cpp
     server/http/httpclient_parser_rl.cpp
+    server/uri_rl.cpp
     server/http/http11_parser_rl.cpp
     server/http/http_parser.cpp
     server/http/http_server.cpp
@@ -45,6 +46,7 @@ set(LIB_SRC
     server/timer.cpp
     server/utils.cpp
     )
+
 
 # 生成shared库
 add_library(server SHARED ${LIB_SRC})
@@ -153,6 +155,14 @@ add_executable(test_http_connection tests/test_http_connection.cpp)
 add_dependencies(test_http_connection server)
 force_readfine_file_macro_for_sources(test_http_connection) # __FILE__
 target_link_libraries(test_http_connection server ${YAMLCPP} -lpthread -ldl)
+
+
+#新的单元测试文件test__uri
+add_executable(test_uri tests/test_uri.cpp)
+add_dependencies(test_uri server)
+force_readfine_file_macro_for_sources(test_uri) # __FILE__
+target_link_libraries(test_uri server ${YAMLCPP} -lpthread -ldl)
+
 
 # 输出的lib的生成路径 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

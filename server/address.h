@@ -10,6 +10,7 @@
 #include<sys/un.h>
 #include<vector>
 
+
 namespace server{
 
 class IPAddress;
@@ -98,8 +99,9 @@ private:
 class IPv6Address : public IPAddress{
 public:
     typedef std::shared_ptr<IPv6Address>ptr;
+
+    IPv6Address();
     IPv6Address(const sockaddr_in6& address);
-    IPv6Address(const char* address = INADDR_ANY, uint16_t port = 0);
     IPv6Address(const uint8_t address[16], uint16_t port = 0);
 
     static IPv6Address::ptr Create(const char* address, uint16_t port = 0);

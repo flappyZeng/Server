@@ -78,7 +78,7 @@ namespace server{
         ,m_type(type)
         ,m_protocol(protocol)
         ,m_isConnected(false){
-
+        
     }   
     Socket::~Socket(){
         close();
@@ -183,13 +183,11 @@ namespace server{
                 return false;
             }
         }
-
         if(addr->getFamily() != m_family){
             SERVER_LOG_ERROR(g_logger) << "connect sock.family(" << m_family << ") addr.family(" 
                         << addr->getFamily() << ") not equal, addr = " << addr->toString();
             return false;
         }
-
         if((uint64_t)-1 == timeout_ms){
             if(::connect(m_sock, addr->getAddr(), addr->getAddrlen())){
                 SERVER_LOG_ERROR(g_logger) << "sock = " << m_sock << " connect(" << addr->toString() << ") error errno = " << errno

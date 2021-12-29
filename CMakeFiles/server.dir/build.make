@@ -252,9 +252,33 @@ CMakeFiles/server.dir/http/httpclient_parser_rl.cpp.o.provides: CMakeFiles/serve
 CMakeFiles/server.dir/http/httpclient_parser_rl.cpp.o.provides.build: CMakeFiles/server.dir/http/httpclient_parser_rl.cpp.o
 
 
+CMakeFiles/server.dir/uri_rl.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/uri_rl.cpp.o: server/uri_rl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/uri_rl.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/uri_rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/uri_rl.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/uri_rl.cpp
+
+CMakeFiles/server.dir/uri_rl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/uri_rl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"server/uri_rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adminz/桌面/project/HighPerformanceServer/server/uri_rl.cpp > CMakeFiles/server.dir/uri_rl.cpp.i
+
+CMakeFiles/server.dir/uri_rl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/uri_rl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"server/uri_rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adminz/桌面/project/HighPerformanceServer/server/uri_rl.cpp -o CMakeFiles/server.dir/uri_rl.cpp.s
+
+CMakeFiles/server.dir/uri_rl.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/uri_rl.cpp.o.requires
+
+CMakeFiles/server.dir/uri_rl.cpp.o.provides: CMakeFiles/server.dir/uri_rl.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/uri_rl.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/uri_rl.cpp.o.provides
+
+CMakeFiles/server.dir/uri_rl.cpp.o.provides.build: CMakeFiles/server.dir/uri_rl.cpp.o
+
+
 CMakeFiles/server.dir/http/http11_parser_rl.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/http/http11_parser_rl.cpp.o: server/http/http11_parser_rl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/http/http11_parser_rl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/server.dir/http/http11_parser_rl.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/http/http11_parser_rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/http/http11_parser_rl.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/http/http11_parser_rl.cpp
 
 CMakeFiles/server.dir/http/http11_parser_rl.cpp.i: cmake_force
@@ -278,7 +302,7 @@ CMakeFiles/server.dir/http/http11_parser_rl.cpp.o.provides.build: CMakeFiles/ser
 
 CMakeFiles/server.dir/http/http_parser.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/http/http_parser.cpp.o: server/http/http_parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/server.dir/http/http_parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/server.dir/http/http_parser.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/http/http_parser.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/http/http_parser.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/http/http_parser.cpp
 
 CMakeFiles/server.dir/http/http_parser.cpp.i: cmake_force
@@ -302,7 +326,7 @@ CMakeFiles/server.dir/http/http_parser.cpp.o.provides.build: CMakeFiles/server.d
 
 CMakeFiles/server.dir/http/http_server.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/http/http_server.cpp.o: server/http/http_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/server.dir/http/http_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/server.dir/http/http_server.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/http/http_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/http/http_server.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/http/http_server.cpp
 
 CMakeFiles/server.dir/http/http_server.cpp.i: cmake_force
@@ -326,7 +350,7 @@ CMakeFiles/server.dir/http/http_server.cpp.o.provides.build: CMakeFiles/server.d
 
 CMakeFiles/server.dir/http/httpsession.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/http/httpsession.cpp.o: server/http/httpsession.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/server.dir/http/httpsession.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/server.dir/http/httpsession.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/http/httpsession.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/http/httpsession.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/http/httpsession.cpp
 
 CMakeFiles/server.dir/http/httpsession.cpp.i: cmake_force
@@ -350,7 +374,7 @@ CMakeFiles/server.dir/http/httpsession.cpp.o.provides.build: CMakeFiles/server.d
 
 CMakeFiles/server.dir/http/http_connection.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/http/http_connection.cpp.o: server/http/http_connection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/server.dir/http/http_connection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/server.dir/http/http_connection.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/http/http_connection.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/http/http_connection.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/http/http_connection.cpp
 
 CMakeFiles/server.dir/http/http_connection.cpp.i: cmake_force
@@ -374,7 +398,7 @@ CMakeFiles/server.dir/http/http_connection.cpp.o.provides.build: CMakeFiles/serv
 
 CMakeFiles/server.dir/http/servlet.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/http/servlet.cpp.o: server/http/servlet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/server.dir/http/servlet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/server.dir/http/servlet.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/http/servlet.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/http/servlet.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/http/servlet.cpp
 
 CMakeFiles/server.dir/http/servlet.cpp.i: cmake_force
@@ -398,7 +422,7 @@ CMakeFiles/server.dir/http/servlet.cpp.o.provides.build: CMakeFiles/server.dir/h
 
 CMakeFiles/server.dir/iomanager.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/iomanager.cpp.o: server/iomanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/server.dir/iomanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/server.dir/iomanager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/iomanager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/iomanager.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/iomanager.cpp
 
 CMakeFiles/server.dir/iomanager.cpp.i: cmake_force
@@ -422,7 +446,7 @@ CMakeFiles/server.dir/iomanager.cpp.o.provides.build: CMakeFiles/server.dir/ioma
 
 CMakeFiles/server.dir/log.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/log.cpp.o: server/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/server.dir/log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/server.dir/log.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/log.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/log.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/log.cpp
 
 CMakeFiles/server.dir/log.cpp.i: cmake_force
@@ -446,7 +470,7 @@ CMakeFiles/server.dir/log.cpp.o.provides.build: CMakeFiles/server.dir/log.cpp.o
 
 CMakeFiles/server.dir/scheduler.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/scheduler.cpp.o: server/scheduler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/server.dir/scheduler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/server.dir/scheduler.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/scheduler.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/scheduler.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/scheduler.cpp
 
 CMakeFiles/server.dir/scheduler.cpp.i: cmake_force
@@ -470,7 +494,7 @@ CMakeFiles/server.dir/scheduler.cpp.o.provides.build: CMakeFiles/server.dir/sche
 
 CMakeFiles/server.dir/socket.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/socket.cpp.o: server/socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/server.dir/socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/server.dir/socket.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/socket.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/socket.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/socket.cpp
 
 CMakeFiles/server.dir/socket.cpp.i: cmake_force
@@ -494,7 +518,7 @@ CMakeFiles/server.dir/socket.cpp.o.provides.build: CMakeFiles/server.dir/socket.
 
 CMakeFiles/server.dir/socketstream.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/socketstream.cpp.o: server/socketstream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/server.dir/socketstream.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/server.dir/socketstream.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/socketstream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/socketstream.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/socketstream.cpp
 
 CMakeFiles/server.dir/socketstream.cpp.i: cmake_force
@@ -518,7 +542,7 @@ CMakeFiles/server.dir/socketstream.cpp.o.provides.build: CMakeFiles/server.dir/s
 
 CMakeFiles/server.dir/stream.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/stream.cpp.o: server/stream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/server.dir/stream.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/server.dir/stream.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/stream.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/stream.cpp
 
 CMakeFiles/server.dir/stream.cpp.i: cmake_force
@@ -542,7 +566,7 @@ CMakeFiles/server.dir/stream.cpp.o.provides.build: CMakeFiles/server.dir/stream.
 
 CMakeFiles/server.dir/tcp_server.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/tcp_server.cpp.o: server/tcp_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/server.dir/tcp_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/server.dir/tcp_server.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/tcp_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/tcp_server.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/tcp_server.cpp
 
 CMakeFiles/server.dir/tcp_server.cpp.i: cmake_force
@@ -566,7 +590,7 @@ CMakeFiles/server.dir/tcp_server.cpp.o.provides.build: CMakeFiles/server.dir/tcp
 
 CMakeFiles/server.dir/thread.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/thread.cpp.o: server/thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/server.dir/thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/server.dir/thread.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/thread.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/thread.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/thread.cpp
 
 CMakeFiles/server.dir/thread.cpp.i: cmake_force
@@ -590,7 +614,7 @@ CMakeFiles/server.dir/thread.cpp.o.provides.build: CMakeFiles/server.dir/thread.
 
 CMakeFiles/server.dir/timer.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/timer.cpp.o: server/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/server.dir/timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/server.dir/timer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/timer.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/timer.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/timer.cpp
 
 CMakeFiles/server.dir/timer.cpp.i: cmake_force
@@ -614,7 +638,7 @@ CMakeFiles/server.dir/timer.cpp.o.provides.build: CMakeFiles/server.dir/timer.cp
 
 CMakeFiles/server.dir/utils.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/utils.cpp.o: server/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/server.dir/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/server.dir/utils.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"server/utils.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/utils.cpp.o -c /home/adminz/桌面/project/HighPerformanceServer/server/utils.cpp
 
 CMakeFiles/server.dir/utils.cpp.i: cmake_force
@@ -646,6 +670,7 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/hook.cpp.o" \
 "CMakeFiles/server.dir/http/http.cpp.o" \
 "CMakeFiles/server.dir/http/httpclient_parser_rl.cpp.o" \
+"CMakeFiles/server.dir/uri_rl.cpp.o" \
 "CMakeFiles/server.dir/http/http11_parser_rl.cpp.o" \
 "CMakeFiles/server.dir/http/http_parser.cpp.o" \
 "CMakeFiles/server.dir/http/http_server.cpp.o" \
@@ -674,6 +699,7 @@ server/lib/libserver.so: CMakeFiles/server.dir/fiber.cpp.o
 server/lib/libserver.so: CMakeFiles/server.dir/hook.cpp.o
 server/lib/libserver.so: CMakeFiles/server.dir/http/http.cpp.o
 server/lib/libserver.so: CMakeFiles/server.dir/http/httpclient_parser_rl.cpp.o
+server/lib/libserver.so: CMakeFiles/server.dir/uri_rl.cpp.o
 server/lib/libserver.so: CMakeFiles/server.dir/http/http11_parser_rl.cpp.o
 server/lib/libserver.so: CMakeFiles/server.dir/http/http_parser.cpp.o
 server/lib/libserver.so: CMakeFiles/server.dir/http/http_server.cpp.o
@@ -692,7 +718,7 @@ server/lib/libserver.so: CMakeFiles/server.dir/timer.cpp.o
 server/lib/libserver.so: CMakeFiles/server.dir/utils.cpp.o
 server/lib/libserver.so: CMakeFiles/server.dir/build.make
 server/lib/libserver.so: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX shared library server/lib/libserver.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX shared library server/lib/libserver.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -708,6 +734,7 @@ CMakeFiles/server.dir/requires: CMakeFiles/server.dir/fiber.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/hook.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/http/http.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/http/httpclient_parser_rl.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/uri_rl.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/http/http11_parser_rl.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/http/http_parser.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/http/http_server.cpp.o.requires

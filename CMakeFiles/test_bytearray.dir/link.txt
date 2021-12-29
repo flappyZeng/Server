@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/test_bytearray.dir/tests/test_bytearray.cpp.o  -o server/bin/test_bytearray  -L./server/lib -Wl,-rpath,./server/lib:/home/adminz/桌面/project/HighPerformanceServer/server/lib server/lib/libserver.so /usr/local/lib/libyaml-cpp.a -lpthread -ldl 
+/usr/bin/c++    -rdynamic CMakeFiles/test_bytearray.dir/tests/test_bytearray.cpp.o  -o server/bin/test_bytearray  -L/server/lib -Wl,-rpath,/server/lib:/home/adminz/桌面/project/HighPerformanceServer/server/lib server/lib/libserver.so /usr/local/lib/libyaml-cpp.a -lpthread -ldl 

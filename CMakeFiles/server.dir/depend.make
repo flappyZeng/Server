@@ -259,6 +259,10 @@ CMakeFiles/server.dir/timer.cpp.o: server/timer.cpp
 CMakeFiles/server.dir/timer.cpp.o: server/timer.h
 CMakeFiles/server.dir/timer.cpp.o: server/utils.h
 
+CMakeFiles/server.dir/uri_rl.cpp.o: server/address.h
+CMakeFiles/server.dir/uri_rl.cpp.o: server/uri.h
+CMakeFiles/server.dir/uri_rl.cpp.o: server/uri_rl.cpp
+
 CMakeFiles/server.dir/utils.cpp.o: server/fiber.h
 CMakeFiles/server.dir/utils.cpp.o: server/log.h
 CMakeFiles/server.dir/utils.cpp.o: server/noncopyable.h

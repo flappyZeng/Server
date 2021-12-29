@@ -103,8 +103,10 @@ static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,uint32_t e
     std::shared_ptr<timer_info>tinfo(new timer_info);
 
     retry:
-     SERVER_LOG_ERROR(g_logger) << "start  " << hook_fun_name;
+    SERVER_LOG_ERROR(g_logger) << "start  " << hook_fun_name;
+    SERVER_LOG_ERROR(g_logger) << "socke statue:  " << fd << " " << ctx->isClose();
     ssize_t n = fun(fd, std::forward<Args>(args)...);
+    SERVER_LOG_ERROR(g_logger) << "socke statue:  " << fd << " " << ctx->isClose();
     SERVER_LOG_ERROR(g_logger) << "n = " << n << " " << hook_fun_name;
     //没能执行成功，无限重试
     while(-1 == n && errno == EINTR){
@@ -130,9 +132,9 @@ static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,uint32_t e
             }, winfo);
         }
         //添加事件
-        //SERVER_LOG_ERROR(g_logger) << hook_fun_name << fd << " dd event " <<  event;
+        SERVER_LOG_ERROR(g_logger) << hook_fun_name << fd << " dd event " <<  event;
         int rt = iom ->addEvent(fd, (server::IOManager::Event)(event));
-        //SERVER_LOG_ERROR(g_logger) << hook_fun_name << fd << "add event over" <<  event;
+        SERVER_LOG_ERROR(g_logger) << hook_fun_name << fd << " add event over" <<  event;
         //添加失败
         if(rt){
             SERVER_LOG_ERROR(g_logger) << hook_fun_name << "addEvent(" << fd << "," << event << ") error";
@@ -156,8 +158,10 @@ static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,uint32_t e
             goto retry;
         }
     }
+    SERVER_LOG_INFO(g_logger) << "do_io over, return n =" << n;
     return n;
 }
+
 extern "C"{
 #define XX(name) name ## _fun name ## _f = nullptr;
     HOOK_FUN(XX);
@@ -301,7 +305,7 @@ ssize_t readv(int fd, const struct iovec *iov, int iovcnt){
 
 //recv函数
 ssize_t recv(int sockfd, void *buf, size_t len, int flags){
-    SERVER_LOG_INFO(g_logger) << "receive from bufferss";
+    //SERVER_LOG_INFO(g_logger) << "receive from bufferss";
     return do_io(sockfd, recv_f, "recv", server::IOManager::READ, SO_RCVTIMEO, buf, len, flags);
 }
 

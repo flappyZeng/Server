@@ -1,5 +1,6 @@
 /home/adminz/桌面/project/HighPerformanceServer/CMakeFiles/rebuild_cache.dir
 /home/adminz/桌面/project/HighPerformanceServer/CMakeFiles/edit_cache.dir
+/home/adminz/桌面/project/HighPerformanceServer/CMakeFiles/test_uri.dir
 /home/adminz/桌面/project/HighPerformanceServer/CMakeFiles/test_http_connection.dir
 /home/adminz/桌面/project/HighPerformanceServer/CMakeFiles/test_http_server.dir
 /home/adminz/桌面/project/HighPerformanceServer/CMakeFiles/test_fiber.dir

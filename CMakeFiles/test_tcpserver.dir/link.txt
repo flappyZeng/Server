@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/test_tcpserver.dir/tests/test_tcpserver.cpp.o  -o server/bin/test_tcpserver  -L./server/lib -Wl,-rpath,./server/lib:/home/adminz/桌面/project/HighPerformanceServer/server/lib server/lib/libserver.so /usr/local/lib/libyaml-cpp.a -lpthread -ldl 
+/usr/bin/c++    -rdynamic CMakeFiles/test_tcpserver.dir/tests/test_tcpserver.cpp.o  -o server/bin/test_tcpserver  -L/server/lib -Wl,-rpath,/server/lib:/home/adminz/桌面/project/HighPerformanceServer/server/lib server/lib/libserver.so /usr/local/lib/libyaml-cpp.a -lpthread -ldl 

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/adminz/桌面/project/HighPerformanceServer/server/address.h
+iostream
+-
+memory
+-
+map
+-
+netinet/in.h
+-
+string
+-
+sys/socket.h
+-
+sys/types.h
+-
+sys/un.h
+-
+vector
+-
+
+/home/adminz/桌面/project/HighPerformanceServer/server/tests/test_uri.cpp
+../uri.h
+/home/adminz/桌面/project/HighPerformanceServer/server/uri.h
+iostream
+-
+
+/home/adminz/桌面/project/HighPerformanceServer/server/uri.h
+memory
+-
+string
+-
+ostream
+-
+address.h
+/home/adminz/桌面/project/HighPerformanceServer/server/address.h
+

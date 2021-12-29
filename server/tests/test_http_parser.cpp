@@ -40,7 +40,7 @@ const char test_response_data[] = "HTTP/1.1 301 Moved Permanently\r\n"
 void test_response(){
     server::http::HttpResponseParser parser;
     std::string temp = test_response_data;
-    size_t rt = parser.execute(&temp[0], temp.size());
+    size_t rt = parser.execute(&temp[0], temp.size(), false);
     SERVER_LOG_INFO(g_logger) << "execute rt = " << rt
                             << " has_error = " << parser.hasError()
                             << " is_finished = " << parser.isFinished()

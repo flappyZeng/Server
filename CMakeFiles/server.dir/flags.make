@@ -6,7 +6,7 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -Dserver_EXPORTS
 
-CXX_INCLUDES = -I/home/adminz/桌面/project/HighPerformanceServer/server/. -I/home/adminz/桌面/project/HighPerformanceServer/server/./server/include 
+CXX_INCLUDES = -I/home/adminz/桌面/project/HighPerformanceServer/server/. -I/server/include 
 
 # Custom defines: CMakeFiles/server.dir/address.cpp.o_DEFINES = __FILE__="server/address.cpp"
 
@@ -23,6 +23,8 @@ CXX_INCLUDES = -I/home/adminz/桌面/project/HighPerformanceServer/server/. -I/h
 # Custom defines: CMakeFiles/server.dir/http/http.cpp.o_DEFINES = __FILE__="server/http/http.cpp"
 
 # Custom defines: CMakeFiles/server.dir/http/httpclient_parser_rl.cpp.o_DEFINES = __FILE__="server/http/httpclient_parser_rl.cpp"
+
+# Custom defines: CMakeFiles/server.dir/uri_rl.cpp.o_DEFINES = __FILE__="server/uri_rl.cpp"
 
 # Custom defines: CMakeFiles/server.dir/http/http11_parser_rl.cpp.o_DEFINES = __FILE__="server/http/http11_parser_rl.cpp"
 

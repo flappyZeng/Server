@@ -51,6 +51,7 @@ namespace server{
     }
 
     bool Address::Lookup(std::vector<Address::ptr> & results, const std::string& host, int family , int type, int protocol ){
+        //SERVER_LOG_ERROR(g_logger) << "host = " << host ;
         addrinfo hints, *result, *next;
         memset(&hints, 0, sizeof(hints));
 
@@ -86,11 +87,13 @@ namespace server{
         if(node.empty()){
             node = host;
         }
+        //SERVER_LOG_ERROR(g_logger) << "node: " << node ;
+        //SERVER_LOG_ERROR(g_logger) << "service: " << service ;
 
         int error = getaddrinfo(node.c_str(), service, &hints, &result);
         if(error){
             SERVER_LOG_ERROR(g_logger) << "Address::lookup getaddr(" << host 
-                << family << ", " << type  << ") error = " << error << " errstr = " << strerror(errno);   
+                << "," <<family << ", " << type  << ") error = " << error << " errstr = " << strerror(errno);   
         }
         next = result;
         while(next){
@@ -348,23 +351,21 @@ namespace server{
     }
 
     //IPv6
-    
-    IPv6Address::IPv6Address(const sockaddr_in6& address){
-        m_addr = address;
-    }
 
-    IPv6Address::IPv6Address(const char*  address, uint16_t port){
+    IPv6Address::IPv6Address(){
         memset(&m_addr, 0, sizeof(m_addr));
         m_addr.sin6_family = AF_INET6;
-        m_addr.sin6_port = byteswapOnLittleEndian(port);
-        memcpy(&m_addr.sin6_addr.__in6_u.__u6_addr16, address, 16);
+    }
+
+    IPv6Address::IPv6Address(const sockaddr_in6& address){
+        m_addr = address;
     }
 
     IPv6Address::IPv6Address(const uint8_t address[16], uint16_t port){
         memset(&m_addr, 0, sizeof(m_addr));
         m_addr.sin6_family = AF_INET6;
         m_addr.sin6_port = byteswapOnLittleEndian(port);
-        memcpy(&m_addr.sin6_addr.__in6_u.__u6_addr16, address, 16);
+        memcpy(&m_addr.sin6_addr.s6_addr, address, 16);
     }
 
     IPv6Address::ptr IPv6Address::Create(const char* address, uint16_t port){

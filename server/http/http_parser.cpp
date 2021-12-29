@@ -222,7 +222,10 @@ namespace http{
     int HttpResponseParser::hasError() {
         return m_error || httpclient_parser_has_error(&m_parser);
     }
-    size_t HttpResponseParser::execute(char* data, size_t len){
+    size_t HttpResponseParser::execute(char* data, size_t len, bool chunked){
+        if(chunked){
+            httpclient_parser_init(&m_parser);
+        }
         size_t rt = httpclient_parser_execute(&m_parser, data, len, 0);  //返回值表示解析的内容的长度
         memmove(data, data + rt, len - rt);  //将内存前移,覆盖重写
         return rt;
