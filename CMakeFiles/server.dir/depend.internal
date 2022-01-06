@@ -91,6 +91,7 @@ CMakeFiles/server.dir/http/http_connection.cpp.o
  /home/adminz/桌面/project/HighPerformanceServer/server/socketstream.h
  /home/adminz/桌面/project/HighPerformanceServer/server/stream.h
  /home/adminz/桌面/project/HighPerformanceServer/server/thread.h
+ /home/adminz/桌面/project/HighPerformanceServer/server/uri.h
  /home/adminz/桌面/project/HighPerformanceServer/server/utils.h
 CMakeFiles/server.dir/http/http_parser.cpp.o
  /home/adminz/桌面/project/HighPerformanceServer/server/http/http.h

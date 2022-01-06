@@ -228,6 +228,7 @@ namespace http{
         }
         size_t rt = httpclient_parser_execute(&m_parser, data, len, 0);  //返回值表示解析的内容的长度
         memmove(data, data + rt, len - rt);  //将内存前移,覆盖重写
+        //SERVER_LOG_INFO(g_logger) << "parser len = "  << rt;
         return rt;
     }
 

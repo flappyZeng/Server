@@ -233,6 +233,8 @@ http.h
 /home/adminz/桌面/project/HighPerformanceServer/server/socketstream.h
 ../socket.h
 /home/adminz/桌面/project/HighPerformanceServer/server/socket.h
+../uri.h
+/home/adminz/桌面/project/HighPerformanceServer/server/uri.h
 
 /home/adminz/桌面/project/HighPerformanceServer/server/http/http_parser.cpp
 http_parser.h

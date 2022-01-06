@@ -92,8 +92,10 @@ namespace server{
 
         int error = getaddrinfo(node.c_str(), service, &hints, &result);
         if(error){
+            SERVER_LOG_ERROR(g_logger) << "host  =" << host ;
             SERVER_LOG_ERROR(g_logger) << "Address::lookup getaddr(" << host 
-                << "," <<family << ", " << type  << ") error = " << error << " errstr = " << strerror(errno);   
+                << "," <<family << ", " << type  << ") error = " << error << " errstr = " << strerror(errno);
+            return false;   
         }
         next = result;
         while(next){

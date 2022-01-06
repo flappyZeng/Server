@@ -152,6 +152,7 @@ namespace http{
             os << "content-length: " << m_body.size() << "\r\n\r\n"
                << m_body;
         }
+        os << "\r\n";
         return os;
     }
 

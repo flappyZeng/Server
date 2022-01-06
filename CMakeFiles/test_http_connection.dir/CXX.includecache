@@ -67,6 +67,8 @@ http.h
 /home/adminz/桌面/project/HighPerformanceServer/server/socketstream.h
 ../socket.h
 /home/adminz/桌面/project/HighPerformanceServer/server/socket.h
+../uri.h
+/home/adminz/桌面/project/HighPerformanceServer/server/uri.h
 
 /home/adminz/桌面/project/HighPerformanceServer/server/iomanager.h
 scheduler.h
@@ -181,6 +183,16 @@ set
 -
 vector
 -
+
+/home/adminz/桌面/project/HighPerformanceServer/server/uri.h
+memory
+-
+string
+-
+ostream
+-
+address.h
+/home/adminz/桌面/project/HighPerformanceServer/server/address.h
 
 /home/adminz/桌面/project/HighPerformanceServer/server/utils.h
 pthread.h

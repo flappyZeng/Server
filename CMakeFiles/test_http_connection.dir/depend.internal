@@ -18,4 +18,5 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.o
  /home/adminz/桌面/project/HighPerformanceServer/server/tests/test_http_connection.cpp
  /home/adminz/桌面/project/HighPerformanceServer/server/thread.h
  /home/adminz/桌面/project/HighPerformanceServer/server/timer.h
+ /home/adminz/桌面/project/HighPerformanceServer/server/uri.h
  /home/adminz/桌面/project/HighPerformanceServer/server/utils.h

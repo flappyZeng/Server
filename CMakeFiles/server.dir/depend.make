@@ -90,6 +90,7 @@ CMakeFiles/server.dir/http/http_connection.cpp.o: server/socket.h
 CMakeFiles/server.dir/http/http_connection.cpp.o: server/socketstream.h
 CMakeFiles/server.dir/http/http_connection.cpp.o: server/stream.h
 CMakeFiles/server.dir/http/http_connection.cpp.o: server/thread.h
+CMakeFiles/server.dir/http/http_connection.cpp.o: server/uri.h
 CMakeFiles/server.dir/http/http_connection.cpp.o: server/utils.h
 
 CMakeFiles/server.dir/http/http_parser.cpp.o: server/http/http.h

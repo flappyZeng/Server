@@ -7,6 +7,7 @@
 static server::Logger::ptr g_logger = SERVER_LOG_ROOT();
 
 void run(){
+    /*
     server::Address::ptr addr = server::Address::LookupAnyIPAddress("www.sylar.top:80");
     if(!addr){
         SERVER_LOG_ERROR(g_logger) << "get addr error";
@@ -19,7 +20,7 @@ void run(){
         return;
     }
     
-    server::http::HttpConnetction::ptr conn(new server::http::HttpConnetction(sock));
+    server::http::HttpConnection::ptr conn(new server::http::HttpConnection(sock));
     server::http::HttpRequest::ptr req(new server::http::HttpRequest());
     req->setPath("/blog/");
     req->SetHeader("host", "www.sylar.top");
@@ -34,6 +35,18 @@ void run(){
         return;
     }
     SERVER_LOG_INFO(g_logger) << "rsb: " << std::endl << *rsb;
+    */
+    SERVER_LOG_INFO(g_logger) << "-----------------------------------------------------------------------------";
+
+    auto rh = server::http::HttpConnection::DoGet("http://www.baidu.com", 3000);
+    if(!rh){
+        SERVER_LOG_INFO(g_logger) << "recieve response failed";
+        return;
+    }
+    SERVER_LOG_INFO(g_logger) << "result = " << rh->result << "\n"
+                               << "error = " << rh->error << "\n"
+                               << "rsb = " << rh->response->toString();
+    
 }
 int main(int argc, char** argv){
     server::IOManager iom(2);

@@ -17,5 +17,6 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.o: server/str
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.o: server/tests/test_http_connection.cpp
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.o: server/thread.h
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.o: server/timer.h
+CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.o: server/uri.h
 CMakeFiles/test_http_connection.dir/tests/test_http_connection.cpp.o: server/utils.h
 

@@ -10864,7 +10864,7 @@ case 560:
 #line 143 "uri.rl"
     if(cs == uri_parser_error) {
         return nullptr;
-    } else if(cs >= uri_parser_first_final) {
+    } else if(cs >= uri_parser_first_final) {  //状态大于等于就行了
         return uri;
     }
     return nullptr;

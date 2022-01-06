@@ -275,7 +275,8 @@ namespace server{
 
     int Socket::recv(void* buffer, size_t length, int flags){
         if(isConnected()){
-            SERVER_LOG_INFO(g_logger) << "read from buffer";
+            //SERVER_LOG_INFO(g_logger) << "SOCKET = " << getSocket();
+            //SERVER_LOG_INFO(g_logger) << "read from buffer";
             return ::recv(m_sock, buffer, length, flags);
         }
         return -1;
